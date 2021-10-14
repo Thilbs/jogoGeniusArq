@@ -1,3 +1,20 @@
+#################################################################
+#                     PROJETO GENIUS                          	#
+#################################################################
+#      GRUPO: Andre Felipe, Ricardo Alves e Thiago Luiz      	#
+#################################################################
+#    Este programa requer o Bitmap Display conectado ao MIPS. 	#
+#                                     				#
+#    Bitmap Display Settings:                             	#
+#    Unit Width: 16                            			#
+#    Unit Height: 16                             		#
+#    Display Width: 512                         		#
+#    Display Height: 256                      			#
+#    Base Address for Display: 0x10010000            		#
+#################################################################
+#    Teclas associadas as cores aparecem ao iniciar o programa	#					
+#################################################################
+
 #macro que recebe o input do usuario em w a s d
 #e retorna o numero correspondente para ser comparado no array
 .macro letra_para_num(%letra)
@@ -40,7 +57,7 @@
 	
 	initial_address: .word 0x10010000 #endereco inicial do bitmap	
 	welcome: .asciiz "Bem vindo ao GENIUS!\n"
-	cores: .asciiz "Azul: w --- Amarelo: a --- Vermelho: s --- Verde: d\n\n"
+	cores: .asciiz "Movimentação:\nAzul - w\nAmarelo - a\nVermelho - s\nVerde - d\n\n"
 	msgVitoria: .asciiz "\nVoce ganhou!\n"
 	msgPerdeu: .asciiz "\n\nVoce errou, que pena!\n"
 	digitar: .asciiz "Digite a sequencia:"
