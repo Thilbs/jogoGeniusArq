@@ -1,6 +1,7 @@
 # PROJETO GENIUS
 
 Desenvolvido por: André Felipe, Ricardo Alves e Thiago Luiz 
+
 Agradecimentos especiais: Little Fábio <3
 
 Tools -> Bitmap Display
